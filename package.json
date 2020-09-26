@@ -1,0 +1,29 @@
+{
+  "name": "bhasha-quill",
+  "version": "1.0.0",
+  "description": "A QuillJs plugin to write in Sanskrit with support for IAST, Devanagari, and more.",
+  "main": "bhasha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trivedigaurav/bhasha-quill.git"
+  },
+  "keywords": [
+    "quill",
+    "quilljs",
+    "sanskrit",
+    "iast",
+    "devanagari"
+  ],
+  "author": "Gaurav Trivedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trivedigaurav/bhasha-quill/issues"
+  },
+  "homepage": "https://github.com/trivedigaurav/bhasha-quill#readme",
+  "dependencies": {
+    "@sanskrit-coders/sanscript": "git+https://github.com/trivedigaurav/sanscript.js.git"
+  }
+}
