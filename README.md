@@ -38,7 +38,7 @@ Pass the names of the from and to dropdowns to update the transliteration scheme
 This plugin supports Devanagari, IAST, ITRANS, and other schemes by [Sanscript.js](https://github.com/sanskrit/sanscript.js/). 
 
 #### IAST Simplified
-I have also included a simplified IAST scheme that can be used to edit Sanskrit documents using ASCII characters available on a standard keyboard. This fork is available from available from http://github.com/trivedigaurav/sanscript.js/.
+I have also included a simplified IAST scheme that can be used to edit Sanskrit documents using ASCII characters available on a standard keyboard. This fork of Sanscript.js is available from http://github.com/trivedigaurav/sanscript.js/.
 
 <table>
   <tr>
@@ -477,4 +477,15 @@ I have also included a simplified IAST scheme that can be used to edit Sanskrit 
    </td>
   </tr>
 </table>
+
+#### Example Phrases
+
+*IAST Simplified:*    nar-ah. gacchanti |
+
+*IAST:*               narāḥ gacchanti.
+
+*ITRANS:*             narAH gachChanti.
+
+*Devanagari:*         नराः गच्छन्ति ।
+
 
