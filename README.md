@@ -6,7 +6,7 @@ A QuillJs plugin to write in Sanskrit with support for IAST, Devanagari, and mor
 ## Demo
 ![Demo](demo.gif)
 
-You can see demo [here](https://trivedigaurav.com/bhasha), or check out this [example](http://github.com/trivedigaurav/bhasha-quill-example/) repository.
+You can see demo [here](https://trivedigaurav.com/exp/bhasha), or check out this [example](http://github.com/trivedigaurav/bhasha-quill-example/) repository.
 
 ## Getting Started
 
