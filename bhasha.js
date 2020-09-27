@@ -1,5 +1,5 @@
 import Quill from "quill";
-import Sanscript from "@sanskrit-coders/sanscript';
+import Sanscript from "@sanskrit-coders/sanscript";
 
 console.log("Loading", Sanscript.t("bh-as.-a", "iast_ascii", "devanagari"), "...");
 
