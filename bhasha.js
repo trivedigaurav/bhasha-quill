@@ -13,26 +13,26 @@ class Bhasha {
         this.enabled = true;
 
         let from = document.querySelector(this.options.fromDropdown);
-        if (from) from.addEventListener('change', this.changeScheme);
+        if (from) from.addEventListener('change', this.changeScheme.bind(this));
         let to = document.querySelector(this.options.toDropdown);
-        if (to) to.addEventListener('change', this.changeScheme);
+        if (to) to.addEventListener('change', this.changeScheme.bind(this));
         this.changeScheme(); //read current values
 
         quill.on("text-change", this.transliterate.bind(this));
     }
 
     changeScheme(){
-        let from = document.querySelector(this.options.fromDropdown + " option:checked");
+        let from = document.querySelector(this.options.fromDropdown);
         
         if(from) 
-            this.fromScheme = from.value;
+            this.fromScheme = from.options[from.selectedIndex].value;
         else 
             this.fromScheme = "iast_ascii"
 
-        let to = document.querySelector(this.options.toDropdown + " option:checked");
+        let to = document.querySelector(this.options.toDropdown);
         
         if(to) 
-            this.toScheme = to.value;
+            this.toScheme = to.options[to.selectedIndex].value;
         else 
             this.toScheme = "devanagari"
 
@@ -42,6 +42,8 @@ class Bhasha {
     transliterate(delta, oldDelta, source){ 
         
         if(!this.enabled || source != 'user') return;
+
+        if(this.fromScheme == this.toScheme) return;
 
         const range = this.quill.getSelection();
         if (range == null) return;
