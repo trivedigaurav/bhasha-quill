@@ -1,6 +1,6 @@
 {
   "name": "bhasha-quill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A QuillJs plugin to write in Sanskrit with support for IAST, Devanagari, and more.",
   "main": "bhasha.js",
   "scripts": {
